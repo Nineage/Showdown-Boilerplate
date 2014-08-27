@@ -252,18 +252,49 @@ var commands = exports.commands = {
         helpvotes: function(room, user, cmd){
                 return this.parse('/wall Remember to **vote** even if you don\'t want to battle; that way you\'re still voting for what tier battles you want to watch!');     
         },
+	abuse: 'aboose',
+        aboose: function(room, user, cmd){
+                return this.parse('/pm Chakra, http://www.todayifoundout.com/wp-content/uploads/2010/09/spam5.jpg');     
+        },
+	crie: 'caboose',
+        caboose: function(room, user, cmd){
+                return this.parse('/pm MadAsTheHatter, /me spanks MadAsTheHatter!');     
+        },
+	crie2: 'caboose2',
+        caboose2: function(room, user, cmd){
+                return this.parse('/pm MadAsTheHatter, /me spanks MadAsTheHatter!!');     
+        },
+	
 	spank: function(target, room, user){
 		if(!target) return this.sendReply('/spank needs a target.');
 		return this.parse('/me spanks ' + target + '!');
 	},
 	
-    ac:'armcannons',
+    Evil:'evil',
+	evil: function(target, room, user) {
+                        if(!this.canBroadcast()) return;
+                        this.sendReplyBox('<center> <img src = "http://2.bp.blogspot.com/-xjCXTEfWUso/U3zBu2GTpfI/AAAAAAAAfcQ/5xthlz2Q_8M/s1600/Elmo+(Gif).gif"> <br> <font size="4"><b><i><font color="#9C0D0D">Evil-kun</i><br></font><b> <blink> Ace: Dis is an ivol zing </blink></b><br><b>Elmo sabe donde vives...</b></center>')
+                },
+	ac:'armcannons',
 	armcannons: function(target, room, user) {
                         if(!this.canBroadcast()) return;
-                        this.sendReplyBox('<center><img src="http://i.imgur.com/MhvkhwF.gif"><br />' +
-                                          '<font size=3><i><font color=blue><b>Hashtag Armcannons</b></font></i></font><br />' +
-                                          '<blink><b><font color=gray>Ace:Mega Buster</font></b></blink><br />' +
-                                          '<b>#GetHitWifAllOfDat</b>')
+                        this.sendReplyBox('<center><img src = "http://i.imgur.com/rLcl2V6.gif"> <center><br> <font size="3"><b><i><font color="blue">Josh</i><br></font><b> <blink> Ace: Darmanitan </blink></b> <br><b>Stealing yo girl shofu style</b></center>')
+                },
+	plug: function(target, room, user) {
+                        if(!this.canBroadcast()) return;
+                        this.sendReplyBox('<center><img src="http://oi61.tinypic.com/10ofrb9.jpg" height="300" width="540"/> </a><br><font size="3"><b><i><font color="Black">Plug Crew</i><br></font><b><blink><a href="http://plug.dj/infinite-jam-session/">Plug Room</a></font></blink></b><br></center>')
+                },
+	mandy: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox(' <center> <img src="https://38.media.tumblr.com/6ebc0377922856d3a81a0d190ec59705/tumblr_n9g18dmLLR1rpn9eno1_500.gif"> <br> <font size="3"><b><i><font color="99FFFF">Mandy</i><br></font><b> <blink> Ace: I\'m kawaii bitch ^.~ </blink></b> <br><b>Cant handle my Cutness</b></center>');
+        },				
+	ac2:'armcannons2',
+	armcannons2: function(target, room, user) {
+                        if(!this.canBroadcast()) return;
+                        this.sendReplyBox('<center><img src="http://i.imgur.com/NHfpSOz.jpg"><br />' +
+                                          '<font size=4><i><font color=blue><b>Josh</b></font></i></font><br />' +
+                                          '<blink><b><font color=gray>Ace: Shocking good looks</font></b></blink><br />' +
+                                          '<b>First I eat my nutella then I eel yo girl</b>')
                 },
 
 
@@ -281,7 +312,7 @@ var commands = exports.commands = {
                                       'Like this server and want to help out?<br />' +
                                       '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MSLQFMFMNUMX4&lc=US&item_name=Infinite%20Server%20%28http%3a%2f%2finfinite%2epsim%2eus%2f%29&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif" /></a><br />' +
                                       '<b><blink>Ace: Gratitude</blink></b><br />'  +
-									  '<b>#Message Da Bic Boi afterwards to make sure the donation wnt through!</b>' )
+									  '<b>#Message Da Bic Boi afterwards to make sure the donation went through!</b>' )
             },
 	scrub: function(target, room, user) {
                     if(!this.canBroadcast()) return;
@@ -360,10 +391,7 @@ var commands = exports.commands = {
 	},
 	frost: function(target, room, user) {
                     if(!this.canBroadcast()) return;
-		    this.sendReplyBox('<center><img src="http://i1.ytimg.com/vi/GDjxbVdX55o/maxresdefault.jpg"height="320" width="640"><br />' +
-                                      '<font size=3><i><font color=cyan><b>Frost</b></font></i></font><br />' +
-                                      '<b><blink>Ace: Serene Mentality</blink></b><br />' +
-                                      '<b>Veni, Veni, Veni #2muchpantsuforme.</b>')
+		    this.sendReplyBox('<center><a href="http://a.tumblr.com/tumblr_l6dyfyOTqx1qab7jvo1.mp3"> <img src="http://i.imgur.com/CwCKNVD.gif"/> </a><br><font size="3"><b><i><font color="blue">Frost</i><br></font><b><blink>Willpower</font></blink></b><br><font color="585858"><i>I\'ll never fall by the likes of people such as you.</i></center>')
             },
 	
 	twerk: function(target, room, user) {
@@ -404,6 +432,19 @@ var commands = exports.commands = {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="https://i.imgur.com/4PJvXqD.gif"><br />')
             },
+	infusion: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://ionegiantmag.files.wordpress.com/2014/02/dontwanta.gif?w=340&h=206"><br />')
+            },
+	monopoly: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/C7ETl.jpg"><br />')
+            },
+			
+	korps: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><b><img src="http://24.media.tumblr.com/4dea623d6844fab1ff1c9e3ddb53d06e/tumblr_n1goo3Z1J11rvr5jyo2_500.gif"></a><br> <font size= 3> <i><font color = "blue"> Korps</i></font><br><blink> <b> I will find you.</blink> </b><br>“No matter where you go, I\'ll follow you. Because I love you."')
+            },
 	jj: function(target, room, user) {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="https://i.imgur.com/CwCveKQ.gif"><br />' +
@@ -419,9 +460,9 @@ var commands = exports.commands = {
     hue: 'BR',
 	br: 'BR',
 	BR: function(target, room, user)
-            {if (!this.canBroadcast()) return false;
-            return this.sendReplyBox('<center> <img src = "http://i.imgur.com/Che1z8I.gif"> <br> <font size="3"><b><i><font color="642EFE">Black Rabbit</i><br></font><b> <blink> Ace: The passage between life and death </blink></b> <br><b>Twiddling the strings of fate</b></center>');
-            },
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox(' <center><a href="https://a.tumblr.com/tumblr_mujxyk4g1U1shttnco1.mp3"target="_blank"><img src=http://goo.gl/6tsGk3> </a><br> <font size="3"><b><i><font color="642EFE">BlackRabbit</i><br></font><b> <blink> Ace: Swimpuku </blink></b> <br><b>I am sorry, is my swag distracting you?<b><center>');
+        },
 
 	mad: 'math',
 	math: function(target, room, user) {
@@ -479,20 +520,81 @@ var commands = exports.commands = {
                                       '<font size=3><i><font color=purple><b>Omega Supreme</b></font></i></font><br />' 
                                       )
             },
+	bd: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/ganNp.jpg"><br />' +
+                                      '<font size=3><i><font color=purple><b>Backdoor Access: Félicette (Credit: JD x Félicette)</b></font></i></font><br />' +
+									' People who have purchased this: nonstopkevn, DavidJ, Félicette, jd, retrofeather, Absolute Maximum, Feeboss, Giantsdms, xVeNoMiiZz, KafkaBlack, Quilavaa, Chakra, Connor the Goodra, and of course: Da Bic Boi. </center>'
+                                      )
+            },
+	jd: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/QWGOz.jpg"><br />' +
+                                      '<font size=3><i><font color=blue><b>JD</b></font></i></font><br />'+
+										'<b><blink>Ace: Sexual Tension</blink></b><br />'
+                                      )
+            },
+	toxic: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center> <img src = "http://imgur.com/uY78BN0.gif"> <br> ' +
+					'<font size="3"><b><i><font color="Purple">Toxic</i><br></font></b>' +
+					'<blink> Ace:Outernet</blink></b> <br>' +
+					'<b>Stay indoors ;3</b></center>'
+                                      )
+            },
+	waffle: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/4EhXF.jpg"><br />' +
+                                      '<font size=1><i><font color=gray><b>#LikeAWaffle (Credit: Chakra)</b></font></i></font><br />'+
+										'<b><blink>Ace: Elite Hand-To-Waffle Combat</blink></b><br />'
+                                      )
+            },
+paperangel: 'paper',
+			angel: 'paper',
+paper: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center><img src ="http://www.reactiongifs.us/wp-content/uploads/2013/09/you_guys_are_weird_community.gif"/><br><font size="3"><b><i><font color="B40404">Paper Angel</i><br></font><b> <blink>Ace: What?</blink></b><br><b><i>Yall mothafuckas weird af tbh</i></b></center>');
+        },
 	peppa: function(target, room, user) {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="https://i.chzbgr.com/maxW500/5106422528/hC0846F32/" height="251" width="375"><br />' +
                                       '<font size=3><i><font color=pink><b>Peppa </b></font></i></font><i><font color=pink><b>Mint </b></font></i></font><br />' 
                                       )
             },	
-		
-
+	  giant: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.imgur.com/zDPw1xo.gif"><br />' +
+                                      '<font size=4><i><font color=33FF33><b>Giantsdms</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Iron Giant</blink></b><br />' +
+                                      '<b>I sweep girls off their feet like i do with your team m8; easily</b>')
+            },
+				
+	kafka: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.imgur.com/bvCvPmd.gif"><br />' +
+                                      '<font size=3><i><font color=33FF33><b>Kafka</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Shimmy</blink></b><br />' +
+                                      '<b>Now stop, OH, then wiggle with it, YEAH!</b>')
+            },  
     fel:'felicette',
 	felicette: function(target, room, user)
             {if (!this.canBroadcast()) return false;
-            return this.sendReplyBox('<center> <img src = "http://i.imgur.com/7XPNWsv.gif?1?2160"> <br> <font size="3"><b><i><font color="94CAE9">Félicette</i><br></font><b> <font color=pink> <blink> Ace: Cherry Blossoms </blink></b> <br><i>Eternal happiness will only bloom after the suffering of the past has been endured.</i></center>');
+            return this.sendReplyBox('<center> <img src = "http://i.snag.gy/qfI9K.jpg"> <br> <font size="3"><b><i><font color="94CAE9">Félicette</i><br></font><b> <font color=pink> <blink> Ace: Cherry Blossoms </blink></b> <br><i>Eternal happiness will only bloom after the suffering of the past has been endured.</i></center>');
             },
-			
+	chakra: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.imgur.com/J6KKFpy.gif"><br />' +
+                                      '<font size=3><i><font color=B40404><b>Chakra</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Kawaii</blink></b><br />' +
+                                      '<br><marquee behavior=scroll direction="left" scrollamount="50">f(x)=e^o3o</marquee>')
+            },
+	sacrisis: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.imgur.com/2P8spqI.gif"><br />' +
+                                      '<font size=3><i><font color=7A770C><b>Sacrisis</b></font></i></font><br />' +
+                                      '<b><blink>Ace: When you get those hax</blink></b>' +
+                                      '<br><b>Make dat booty werk</b>')
+            },	
 	quil:'quilaava',
 	quilaava: function(target, room, user) {
 			if (!this.canBroadcast()) return;
