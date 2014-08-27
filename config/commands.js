@@ -243,6 +243,290 @@ var commands = exports.commands = {
 		}
 		return this.parse('/msg ' + this.targetUsername + ', /invite ' + roomid);
 	},
+	tpoll: 'tiervote',
+	tierpoll: 'tiervote',
+	tiervote: function(target, room, user){
+		return this.parse('/poll Tournament Tier?, pu, ddt, abcabilitiesbeta, abcubersbeta, randombattle, ou, ubers, uu, rubeta, lc, xybattlespotsingles, xybattlespotspecial4, capvolkrakenplaytest, customgame, randomdoublesbattle, smogondoublescurrent, smogondoublesubers, smogondoublesuu, xybattlespotdoubles, vgc2014, doubleschallengecup, doublescustomgame, almostanyability, outheorymon, cap, nualpha, challengecup, challengecup1vs1, hackmons, balancedhackmons, 1v1, oumonotype ');
+	},
+	hv: 'helpvotes',
+        helpvotes: function(room, user, cmd){
+                return this.parse('/wall Remember to **vote** even if you don\'t want to battle; that way you\'re still voting for what tier battles you want to watch!');     
+        },
+	spank: function(target, room, user){
+		if(!target) return this.sendReply('/spank needs a target.');
+		return this.parse('/me spanks ' + target + '!');
+	},
+	
+    ac:'armcannons',
+	armcannons: function(target, room, user) {
+                        if(!this.canBroadcast()) return;
+                        this.sendReplyBox('<center><img src="http://i.imgur.com/MhvkhwF.gif"><br />' +
+                                          '<font size=3><i><font color=blue><b>Hashtag Armcannons</b></font></i></font><br />' +
+                                          '<blink><b><font color=gray>Ace:Mega Buster</font></b></blink><br />' +
+                                          '<b>#GetHitWifAllOfDat</b>')
+                },
+
+
+	gg: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://s28.postimg.org/u3t9nqknd/OBAMA.jpg"><br />' +
+                                      '<font size=3><i><font color=red><b>Da Bic Boi</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Bullet Punch</blink></b><br />' +
+                                      '<b>#hardbody</b>')
+            },
+	donate:'gg2',
+	gg2: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/IEgAQ.jpg"><br />' +
+                                      'Like this server and want to help out?<br />' +
+                                      '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MSLQFMFMNUMX4&lc=US&item_name=Infinite%20Server%20%28http%3a%2f%2finfinite%2epsim%2eus%2f%29&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif" /></a><br />' +
+                                      '<b><blink>Ace: Gratitude</blink></b><br />'  +
+									  '<b>#Message Da Bic Boi afterwards to make sure the donation wnt through!</b>' )
+            },
+	scrub: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://th06.deviantart.net/fs71/PRE/i/2010/138/1/9/Sumo_Lucario_by_Kuzooma.jpg" height="247" width="173"><br />' +
+                                      '<font size=3><i><font color=cyan><b>Scream Scrub</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Diabeetus</blink></b><br />' +
+                                      '<b>#tryhard</b>')
+            },
+	
+	max: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://www.bobstephens.com/Portals/270223/images/hello%20my%20name%20is%20swag.jpg"><br />' +
+                                      '<font size=3><i><font color=green><b>Absolute Maximum</b></font></i></font><br />' +
+                                      '<b><blink>Ace: First Derivative</blink></b><br />' +
+                                      '<b>#scrublord9000+</b>')
+            },
+	alaskaa:'weed',
+	weed: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center> <img src = "https://i.imgur.com/EPoWU4B.gif"> <br> <font size="3"><b><i><font color="00FF00">Alaskaa</i><br></font><b> <blink> Weed </blink></b> <br><b>SMOKEsmOKEWEED EVERYDAY AYY</b></center>');
+        },
+
+	lasers: 'pewpewpew',
+	pewpewpew: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center> <img src = "https://i.imgur.com/HAnRb2U.gif"> <br> <font size="3"><b><i><font color="8000FF">Lasurs</i><br></font><b> <blink> PEWPEWPEW WITH ME SENPAI ARHFRJGHJHJKDF </blink></b> <br><b>Ace: Godly Instrument</b></center>');
+        },
+	
+	cleer: function(target, room, user) {
+	if (!user.can('ban')) return false;
+	this.add('|html|<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>')
+	},
+	
+	enzo: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center> <img src = " https://i.imgur.com/qQwyukJ.gif"> <br> <font color=blue>  <font size="3"> <b><i>FranchescoEnzo</i><br></font> <font color=black> Quote: M8 I swer on me mam i\'ll rek u <br> <blink> <b> Ace: Reflexes </b>');
+        },
+	
+	fatherj: 'davidj',
+	davidj: function(target, room, user)
+        	{if (!this.canBroadcast()) return false;
+        	return this.sendReplyBox('<center> <img src = "http://a.gifb.in/2003839490.gif"> <br> <font size="3"><b><i><font color="00FF00">DavidJ</i><br></font><b> <blink>Ace: OP Spanish Boy</blink></b><br><b>420 Blaze It (Hur Hur)</b></center>');
+        },
+
+	silver: 'sexiness',
+	sexiness: function(target, room, user)
+        	{if (!this.canBroadcast()) return false;
+        	return this.sendReplyBox('<center> <img src = "http://i.imgur.com/yacqCjw.gif"> <br> <font size="3"><b><i><font color="00FF00">SilverKill</i><br></font><b>Show them all you\'re not the ordinary type.</b> <br><b><font color=FFBF00>Deal with it. (⌐■_■)</b></center>');
+        },
+	
+	kevkev:'kevn',
+	kevn: function(target, room, user) {
+			if (!this.canBroadcast()) return;
+			this.sendReplyBox('<center><b><a href="http://imgur.com/dOwckG1"><img src="http://i.imgur.com/dOwckG1.gif"></a><br> <font size= 3> <i><font color = "red"> nonstopkevn</i></font><br><blink> <b> Unstoppable</blink> </b> <br>“It does not matter how slow you go so long as you do not stop.”<br>-Wisdom of Confucius.</center></b>')
+		},
+	pu: function(target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('PU is a tier created by <a href="https://www.youtube.com/user/dundealshowdown">Dun Deal</a>.<br>It is a tier below NU, using only Pokemon from LC, NFE, and Pokemon who are barely ever used in NU.<br>A list of the tier\'s Pokemon can be found on the PU website <a href="http://www.partiallyused.weebly.com">here</a>. Please read it!<br>You can interact with the PU community in Dun Deal\'s Place. Happy battling!')
+		},
+	PUban: 'pufix',
+	PUFix: 'pufix',
+	pufix: function(target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('The PU tier was coded in a way that basically every Pokemon that was not part of the PU tier had to manually be banned out.</a><br>By coding the tier this way, some Pokemon that are not PU are able to be used in PU battles.<br>You can submit the names of the Pokemon that we missed <a href="https://docs.google.com/forms/d/1IUFrec8w3bfcvymDGIe7XBBqN6giso_1wdruyymaYOo/viewform?usp=send_form">Here!')
+		},
+	abcabilities: 'abcab',
+	abcab: function(target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox('ABC Abilities is a tier created by <a href="https://www.youtube.com/user/dundealshowdown">Dun Deal</a>.<br>It is a tier in which every Pokemon can have any move or ability that starts with the same letter its name starts with.<br>A list of the tier\'s Pokemon can be found <a href="http://www.abcabilities.weebly.com">here</a>. Please read it!<br>You can interact with the ABC Abilities community in Dun Deal\'s Place. Happy Battling!')
+		},
+	infinitebot: 'death',
+	bot: 'death',
+	death: function(target, room, user) {
+		if(!this.canBroadcast()) return;
+		this.sendReplyBox('<center> <img src="http://img3.wikia.nocookie.net/__cb20130912191337/powerlisting/images/b/b6/Red_from_rwby_by_theblazingapple-d5vae6e.gif"><br><b><blink><FONT COLOR="red">Infinite Bot</FONT COLOR></blink><br>"For all you would-be spammers out there, I will find you, and I kill ban you."</b></center>')
+	},
+	frost: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+		    this.sendReplyBox('<center><img src="http://i1.ytimg.com/vi/GDjxbVdX55o/maxresdefault.jpg"height="320" width="640"><br />' +
+                                      '<font size=3><i><font color=cyan><b>Frost</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Serene Mentality</blink></b><br />' +
+                                      '<b>Veni, Veni, Veni #2muchpantsuforme.</b>')
+            },
+	
+	twerk: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://img3.wikia.nocookie.net/__cb20080726011931/uncyclopedia/images/1/17/Gandhi_first_blood_1.jpg" height="300" width="330"><br />' +
+                                      '<b><blink>Sample Text</blink></b><br />' +
+                                      '<b>#twerkteam</b>')
+            },
+	thirsty: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://us.123rf.com/400wm/400/400/cemark/cemark1004/cemark100400001/6766198-young-handsome-fitness-model-with-water-bottle-and-towel-after-a-workout-against-white-background.jpg"><br />' +
+                                      '<b>#TheThirstIsReal</b>')
+            },
+	yallthirsty: 'quantavious',
+            quantavious: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://www.smogon.com/media/smog/16/featureduu_victini.png" height="180" width="180"><br />' +
+                                      '<img src="http://th01.deviantart.net/fs71/PRE/f/2013/275/7/d/mega_charizard_y_by_mblock-d6kzs5q.png" height="250" width="180"> <font size=3><b><i><font color=gold>YallThirsty</font></i></b></font> <img src="http://fc09.deviantart.net/fs70/f/2013/247/4/8/mega_charizard_by_yonaka_pinku-d6l1hrb.png" height="180" width="195"><br />' +
+                                      '<b><blink>Ace: Charizard</blink></b><br />' +
+                                      '<b>You All Are Thirsty!</b>')
+            },	
+	macrarazy: 'mac',
+            e4mac: 'mac',
+            e6mac: 'mac',
+            mac: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://media-cerulean.cursecdn.com/attachments/thumbnails/5/622/530/530/mega_lucario.png" height="180" width="150"><br />' +
+                                      '<img src="http://th03.deviantart.net/fs70/PRE/i/2014/003/8/1/mega_aggron_by_theangryaron-d70p759.png" height="130" width="150"> <img src="http://i.imgur.com/91GZs2L.gif"> <img src="http://fc06.deviantart.net/fs70/f/2013/285/4/7/mega_aggron_tramplin__the_lawn_by_brandon_stuart-d6q5051.png" height="130" width="160"><br />' +
+                                      '<b><blink>Ace: Mega Aggron</blink><br />' +
+                                      '<font color=gray>Sometimes... Steel is too much for you!</font></b>')
+            },
+	poto: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/4fv3P.jpg" height="188" width="300"><br />' +
+                                      '<font color=blue><b>#kammi</b></font>')
+            },
+	rekt: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="https://i.imgur.com/4PJvXqD.gif"><br />')
+            },
+	jj: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="https://i.imgur.com/CwCveKQ.gif"><br />' +
+					'<font size=3><i><font color=red><b>Not Da Bic Boi</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Credit Card</blink></b><br />')
+            },
+	tdfw: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><a href="http://audio.radiorecord.ru/superchart/DJ%20SNAKE%20&%20LIL%20JOHN%20-%20Turn%20Down%20For%20What.mp3"> <img src="http://icons.iconarchive.com/icons/creative-freedom/shimmer/48/Play-icon.png" /> </a><br><font size="3"><b><i><font color="FF0000">#TD4W</i><br></font><b><blink>Turn Up MothaFuckas</font></blink></b><br><font color="585858"><i>Swag</i></center>')
+            },
+		
+
+    hue: 'BR',
+	br: 'BR',
+	BR: function(target, room, user)
+            {if (!this.canBroadcast()) return false;
+            return this.sendReplyBox('<center> <img src = "http://i.imgur.com/Che1z8I.gif"> <br> <font size="3"><b><i><font color="642EFE">Black Rabbit</i><br></font><b> <blink> Ace: The passage between life and death </blink></b> <br><b>Twiddling the strings of fate</b></center>');
+            },
+
+	mad: 'math',
+	math: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center> <img src = "http://i.imgur.com/33kIbEf.gif"> <br> <font size="4"><b><i><font color="#0033CC">MadAsTheHatter</i><br></font><b> <blink> Ace: Ralphonso </blink></b><br><b>Stay Frosty</b></center>')
+            },
+	shed: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><a href="http://a.tumblr.com/tumblr_maghncXqXg1qdm6eno1.mp3"> <img src="https://i.chzbgr.com/original/8103697920/AD42FCA1/1" /> </a><br><font size="3"><b><i><font color="FF0000">#733t gg</i><br></font><b><blink> **Gimmicks Ahoy!**</font></blink></b><br><font color="585858"><i>1v1 Me Scrub (Fuggin Click Da Photo)</i></center>')
+            },
+	pantsu: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.minus.com/inbFDGrgY8LE9.gif"><br />' +
+                                      '<font color=blue><b>#AbsolutePervyium \(Credit:shinigami, Pantsu Man\)</b></font>')
+            },
+	rotom: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://fc01.deviantart.net/fs71/f/2013/323/6/0/pokemon___rotom_w_gif_by_immer-d6uug1w.gif" height="250" width="250"><br />' 
+                                      )
+            },
+	taco: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.imgur.com/sFyBYyD.jpg" height="225" width="300"><br />' +
+                                      '<font size=3><i><font color=purple><b>#TeamTacoBell</b></font></i></font><br />' +
+                                      '<b><blink>Ace: Doritos Locos Tacos</blink></b><br />' +
+                                      '<b>Happy Hour is best Hour!</b>')
+            },
+	jen: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://fc09.deviantart.net/fs48/f/2009/204/b/9/Chibi_Glaceon_and_Lucario_by_pichu90.png" height="188" width="300"><br />' +
+                                      '<font color=blue><b>#2kawaii4u</b></font>')
+            },
+	air: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://cdn.gifbay.com/2013/09/dimitri_dance-87762.gif"><br />' +
+                                      '<font color=black><b>"I get my own trainer card!?"</b></font>')
+            },
+	sys: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/zs4VL.jpg"><br />' +
+                                      '<font size=3><font color=bllack><b>Eye Contact: Literally Impossible.</b></font><br />' +
+									  '<b><blink>Ace: Punishment.</blink></b><br />')
+            },
+	
+	troll: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://www.adorablekidsdressup.com/Cloud%20Nine%20Images/Troll_Dolls/exercise-troll.jpg"><br />' +
+                                      '<b>I will shit fury all over you and you will drown in it.</b><br />' +
+									  '<b>#swagmaster69</b>')
+            },
+	
+	kfc: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/12xok.jpg" height="201" width="300"><br />' +
+                                      '<font size=3><i><font color=purple><b>Omega Supreme</b></font></i></font><br />' 
+                                      )
+            },
+	peppa: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="https://i.chzbgr.com/maxW500/5106422528/hC0846F32/" height="251" width="375"><br />' +
+                                      '<font size=3><i><font color=pink><b>Peppa </b></font></i></font><i><font color=pink><b>Mint </b></font></i></font><br />' 
+                                      )
+            },	
+		
+
+    fel:'felicette',
+	felicette: function(target, room, user)
+            {if (!this.canBroadcast()) return false;
+            return this.sendReplyBox('<center> <img src = "http://i.imgur.com/7XPNWsv.gif?1?2160"> <br> <font size="3"><b><i><font color="94CAE9">Félicette</i><br></font><b> <font color=pink> <blink> Ace: Cherry Blossoms </blink></b> <br><i>Eternal happiness will only bloom after the suffering of the past has been endured.</i></center>');
+            },
+			
+	quil:'quilaava',
+	quilaava: function(target, room, user) {
+			if (!this.canBroadcast()) return;
+			this.sendReplyBox('<center><img src= "http://i.imgur.com/2gtjmIs.jpg"> <br> <font size="3"><b><i><font color="FF0000">Quil</i><br></font><b><font color="blue"> Quote: In the heat of the moment never quit, press on!</b><br><b><blink><font color="orange"> Ace: Mystery</blink></b></center>')
+		},
+
+reigns: 'darkness',
+darkness: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center><img src ="http://i.imgur.com/qoZyc5i.gif"/><br><font size="3"><b><i><font color="8A0808">DarknessReigns</i><br></font><b> <blink><font color="0B0B61">Ace: Sasuke</font></blink></b><br><b><i>It gets darkest right before dawn.</i></b></center>');
+        },
+
+prof: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center> <img src = "http://i.imgur.com/BgQ7CjK.png?1"> <br> <font size="3"><b><i><font color="FA58F4">Profpoodle</i><br></font><b> <blink><font color=00FFFF> Ace: Furfrou obv </blink></font></b> <br><b><font color=40FF00> EY BABY U WANT MEH EH? </font></b></center>');
+        },
+
+ralph: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center> <img src = "https://gs1.wac.edgecastcdn.net/8019B6/data.tumblr.com/tumblr_lndbvcZnJx1qady2p.gif"> <br> <font size="3"><b><i><font color="B2C248">Ralphonso</i><br></font><b> <blink> Ace: I GOT DAT <i> Canadian </i> HARD BODY </blink></b> <br> #getripped </center>');
+        },
+
+connor: 'goodra',        
+goodra: function(target, room, user)
+        {if (!this.canBroadcast()) return false;
+        return this.sendReplyBox('<center> <img src = "http://static.fjcdn.com/gifs/Warm+and+comforting+bonfire.+Dark+Souls_831dce_4872510.gif"> <br> <font size="3"><b><i><font color="0404B4">Connor the Goodra</i><br></font><b> <font color="8A0886">  Ace: The comfort of the bonfire </b> <br><b> <font color="190707"> <blink> Lol you\'re a scrub </b></center>');
+        },
+	
+
+    ninkay: 'inky',
+    inky: function(target, room, user)
+            {if (!this.canBroadcast()) return false;
+            return this.sendReplyBox('<center><img src ="https://i.imgur.com/ZFaCmxp.gif"/><br><font size="3"><b><i><font color="FF0000">Inkyfeather</i><br></font><b><blink>st0icm4st3r280000</font></blink></b><br><font color="585858"><i>Ninkay out! .3.</i></center>');
+            },
 
 	/*********************************************************
 	 * Informational commands
