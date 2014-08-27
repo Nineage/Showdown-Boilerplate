@@ -304,7 +304,7 @@ var commands = exports.commands = {
 
 	gg: function(target, room, user) {
                     if(!this.canBroadcast()) return;
-                    this.sendReplyBox('<center><img src="http://s28.postimg.org/u3t9nqknd/OBAMA.jpg"><br />' +
+                    this.sendReplyBox('<center><img src="http://i.snag.gy/BiXq3.jpg"><br />' +
                                       '<font size=3><i><font color=red><b>Da Bic Boi</b></font></i></font><br />' +
                                       '<b><blink>Ace: Bullet Punch</blink></b><br />' +
                                       '<b>#hardbody</b>')
