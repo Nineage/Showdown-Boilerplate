@@ -399,7 +399,7 @@ var commands = exports.commands = {
 			buffer = "This room has no auth.";
 		}
 		connection.popup(buffer.join("\n\n"));
-	if (target.toLowerCase() == "lobby") {
+		if (target.toLowerCase() == "lobby") {
                             return connection.sendTo(
 								'lobby','|html|<center><img src="http://i.snag.gy/RLplo.jpg"><br />' +
 								'<b><u>Welcome to the Infinite Server!</u></b><br />' +
