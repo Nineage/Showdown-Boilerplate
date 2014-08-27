@@ -19,7 +19,8 @@ var fs = require("fs");
 
 var components = exports.components = {
 
-    away: 'back',
+    afk: 'back',
+	away: 'back',
     back: function (target, room, user, connection, cmd) {
         if (!user.away && cmd.toLowerCase() === 'back') return this.sendReply('You are not set as away.');
         user.away = !user.away;
