@@ -19,59 +19,14 @@ var fs = require("fs");
 
 var components = exports.components = {
 
-    afk: 'away',
-        away: function(target, room, user, connection) {
-                if (!this.can('away')) return false;
-
-                if (!user.isAway) {
-                        user.originalName = user.name;
-                        var awayName = user.name + ' - Ⓐⓦⓐⓨ';
-                        //delete the user object with the new name in case it exists - if it does it can cause issues with forceRename
-                        delete Users.get(awayName);
-                        user.forceRename(awayName, undefined, true);
-                        
-                        if (user.isStaff) this.add('|raw|-- <b><font color="#4F86F7">' + user.originalName +'</font color></b> is now away. '+ (target ? " (" + target + ")" : ""));
-
-                        user.isAway = true;
-                }
-                else {
-                        return this.sendReply('You are already set as away, type /back if you are now back');
-                }
-
-                user.updateIdentity();
-        },
-
-        back: function(target, room, user, connection) {
-                if (!this.can('away')) return false;
-
-                if (user.isAway) {
-                        if (user.name.slice(-7) !== ' - Ⓐⓦⓐⓨ') {
-                                user.isAway = false;
-                                return this.sendReply('Your name has been left unaltered and no longer marked as away.');
-                        }
-
-                        var newName = user.originalName;
-                        
-                        //delete the user object with the new name in case it exists - if it does it can cause issues with forceRename
-                        delete Users.get(newName);
-
-                        user.forceRename(newName, undefined, true);
-                        
-                        //user will be authenticated
-                        user.authenticated = true;
-                        
-                        if (user.isStaff) this.add('|raw|-- <b><font color="#4F86F7">' + newName + '</font color></b> is no longer away');
-						
-						
-                        user.originalName = '';
-                        user.isAway = false;
-                }
-                else {
-                        return this.sendReply('You are not set as away');
-                }
-
-                user.updateIdentity();
-        },
+    away: 'back',
+    back: function (target, room, user, connection, cmd) {
+        if (!user.away && cmd.toLowerCase() === 'back') return this.sendReply('You are not set as away.');
+        user.away = !user.away;
+        if (user.isStaff && cmd !== 'back') room.add('|raw|-- <b><font color="' + Core.profile.color + '">' + user.name + '</font></b> is now away. ' + (target ? " (" + target + ")" : ""));
+        user.updateIdentity();
+        this.sendReply("You are " + (user.away ? "now" : "no longer") + " away.");
+    },
 
     earnbuck: 'earnmoney',
     earnbucks: 'earnmoney',
