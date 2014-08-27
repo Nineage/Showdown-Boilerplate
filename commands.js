@@ -1620,7 +1620,7 @@ var commands = exports.commands = {
 			return this.sendReply("User " + this.targetUsername + " not found.");
 		}
 		var a = targetUser.name;
-                    if (a == "Da Bic Boi" || a == "Da Bic Boi - Ⓐⓦⓐⓨ" || a == "Infinite Bot" || a == "Infinite Bot - Ⓐⓦⓐⓨ" || a == "Infinite DDP Bot" || a== "Infinite DDP Bot - Ⓐⓦⓐⓨ" || a == "Not Da Bic Boi" || a== "Not Da Bic Boi - Ⓐⓦⓐⓨ" ) {
+                    if (a == "Da Bic Boi" || a == "Da Bic Boi - Ⓐⓦⓐⓨ" || a == "Infinite DDP Bot" || a== "Infinite DDP Bot - Ⓐⓦⓐⓨ" || a == "Not Da Bic Boi" || a== "Not Da Bic Boi - Ⓐⓦⓐⓨ" ) {
                             return this.sendReply('ACCESS DENIED.');
                             }
 		if (!this.can('kick', targetUser)) return false;
