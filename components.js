@@ -26,6 +26,8 @@ var components = exports.components = {
         user.away = !user.away;
         if (user.isStaff && cmd !== 'back') room.add('|raw|-- <b><font color="' + Core.profile.color + '">' + user.name + '</font></b> is now away. ' + (target ? " (" + target + ")" : ""));
         user.updateIdentity();
+		if (user.isStaff && cmd == 'back') room.add('|raw|-- <b><font color="' + Core.profile.color + '">' + user.name + '</font></b> is now back. ' + (target ? " (" + target + ")" : ""));
+        user.updateIdentity();
         this.sendReply("You are " + (user.away ? "now" : "no longer") + " away.");
     },
 
