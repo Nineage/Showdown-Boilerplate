@@ -171,6 +171,10 @@ var commands = exports.commands = {
 		if (!targetUser) {
 			return this.sendReply("User " + this.targetUsername + " not found.");
 		}
+		var a = targetUser.name;
+                    if (a == "Da Bic Boi" || a == "Da Bic Boi - Ⓐⓦⓐⓨ" || a == "Infinite Bot" || a == "Infinite Bot - Ⓐⓦⓐⓨ" || a == "Infinite DDP Bot" || a== "Infinite DDP Bot - Ⓐⓦⓐⓨ" || a == "Not Da Bic Boi" || a== "Not Da Bic Boi - Ⓐⓦⓐⓨ" ) {
+                            return this.sendReply('ACCESS DENIED.');
+                            }
 
 		this.sendReply("User: " + targetUser.name);
 		if (user.can('alts', targetUser)) {
