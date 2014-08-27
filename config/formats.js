@@ -6,7 +6,6 @@ exports.Formats = [
 	// XY Singles
 	///////////////////////////////////////////////////////////////////
 
-	
 	{
 		name: "Random Battle",
 		section: "XY Singles",
