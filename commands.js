@@ -399,6 +399,22 @@ var commands = exports.commands = {
 			buffer = "This room has no auth.";
 		}
 		connection.popup(buffer.join("\n\n"));
+	if (target.toLowerCase() == "lobby") {
+                            return connection.sendTo(
+								'lobby','|html|<center><img src="http://i.snag.gy/RLplo.jpg"><br />' +
+								'<b><u>Welcome to the Infinite Server!</u></b><br />' +
+								'Home of Infinite Possibilities<br /><br />' +
+								'Make sure to type <b>/help</b> to get a list of commands that you can use and <b>/faq</b> to check out frequently asked questions.<br /><br />' +
+								'<font color=green><font size=3><marquee behavior="scroll" direction="left">"Welcome! Wheeeeeeeeeeeeeeeeee!"</marquee></font></font><br /><br />' +
+								'If you have questions, please contact a staff member (%, @, or &) <br /><br />' +
+								'Jam out with our community <a href="http://plug.dj/infinite-jam-session/">here</a>!<br /><br />' +
+								'Check out our forums  <a href="http://infinitepossibilites.forumotion.com">here</a>!<br /><br />' +
+								'<b>Infinite</b>-<blockquote><em><font color=blue>To Infinity, <i>and Beyond!?</i></em></blockquote></div></font></center>');
+		}
+		
+		if (target.toLowerCase() == "thekungpaoleague") {
+			return connection.sendTo ('thekungpaoleague','|html|<center><img src="http://cdn.pokestache.com/2013/9/26/1225c129d052f71521e97a4c78b99d3b.gif"></center>');
+                    }
 	},
 
 	rb: 'roomban',
