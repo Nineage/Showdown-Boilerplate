@@ -564,8 +564,8 @@ peppa: function(target, room, user) {
                     this.sendReplyBox('<center><img src="https://i.chzbgr.com/maxW500/5106422528/hC0846F32/" height="251" width="375"><br />' +
                                       '<font size=3><i><font color=pink><b>Peppa </b></font></i></font><i><font color=pink><b>Mint </b></font></i></font><br />' + 
 										'<font size=3><i><font color=pink><b>List of things Peppamint has said IRL: </b></font></i><br />' + 
-										'</font><i><font color=pink><b>"I spread my asscheeks for Shrek" 8/16/2014 </b></font></i></font><br />' +
-										'</font><i><font color=pink><b>"Where\'s Picopie? What!? He\'s jacking off!?" 8/16/2014 </b></font></i></font><br />' 		
+										'</font><i><font color=purple><b>"I spread my asscheeks for Shrek" 8/16/2014 </b></font></i></font><br />' +
+										'</font><i><font color=purple><b>"Where\'s Picopie? What!? He\'s jacking off!?" 8/16/2014 </b></font></i></font><br />' 		
                                       )
             },	
 	  giant: function(target, room, user) {
