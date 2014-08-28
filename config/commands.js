@@ -559,10 +559,13 @@ paper: function(target, room, user)
         {if (!this.canBroadcast()) return false;
         return this.sendReplyBox('<center><img src ="http://www.reactiongifs.us/wp-content/uploads/2013/09/you_guys_are_weird_community.gif"/><br><font size="3"><b><i><font color="B40404">Paper Angel</i><br></font><b> <blink>Ace: What?</blink></b><br><b><i>Yall mothafuckas weird af tbh</i></b></center>');
         },
-	peppa: function(target, room, user) {
+peppa: function(target, room, user) {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="https://i.chzbgr.com/maxW500/5106422528/hC0846F32/" height="251" width="375"><br />' +
-                                      '<font size=3><i><font color=pink><b>Peppa </b></font></i></font><i><font color=pink><b>Mint </b></font></i></font><br />' 
+                                      '<font size=3><i><font color=pink><b>Peppa </b></font></i></font><i><font color=pink><b>Mint </b></font></i></font><br />' + 
+										'<font size=3><i><font color=pink><b>List of things Peppamint has said IRL: </b></font></i><br />' + 
+										'</font><i><font color=pink><b>"I spread my asscheeks for Shrek" 8/16/2014 </b></font></i></font><br />' +
+										'</font><i><font color=pink><b>"Where\'s Picopie? What!? He\'s jacking off!?" 8/16/2014 </b></font></i></font><br />' 		
                                       )
             },	
 	  giant: function(target, room, user) {
