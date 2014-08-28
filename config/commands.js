@@ -250,7 +250,7 @@ var commands = exports.commands = {
 	tpoll: 'tiervote',
 	tierpoll: 'tiervote',
 	tiervote: function(target, room, user){
-		return this.parse('/poll Tournament Tier?, pu, ddt, abcabilitiesbeta, abcubersbeta, randombattle, ou, ubers, uu, rubeta, lc, xybattlespotsingles, xybattlespotspecial4, capvolkrakenplaytest, customgame, randomdoublesbattle, smogondoublescurrent, smogondoublesubers, smogondoublesuu, xybattlespotdoubles, vgc2014, doubleschallengecup, doublescustomgame, almostanyability, outheorymon, cap, nualpha, challengecup, challengecup1vs1, hackmons, balancedhackmons, 1v1, oumonotype ');
+		return this.parse('/poll Tournament Tier?, pu, ddt, abcabilitiesbeta, abcubersbeta, randombattle, randomtriplesbattle, ou, ubers, uu, ru, nu, lc, lcuu, randomdoublesbattle, pikachutournamentchu, cap, challengecup1vs1, almostanyability, tiershift, middlecup');
 	},
 	hv: 'helpvotes',
         helpvotes: function(room, user, cmd){
