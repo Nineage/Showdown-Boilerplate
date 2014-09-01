@@ -528,7 +528,7 @@ var commands = exports.commands = {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="http://i.snag.gy/ganNp.jpg"><br />' +
                                       '<font size=3><i><font color=purple><b>Backdoor Access: Félicette (Credit: JD x Félicette)</b></font></i></font><br />' +
-									' People who have purchased this: hashtag armcannons, nonstopkevn, DavidJ, Félicette, jd, retrofeather, Absolute Maximum, Feeboss, Giantsdms, xVeNoMiiZz, KafkaBlack, Quilavaa, Chakra, Connor the Goodra, and of course: Da Bic Boi. </center>'
+									' People who have purchased this: Black Rabbit, hashtag armcannons, nonstopkevn, DavidJ, Félicette, jd, retrofeather, Absolute Maximum, Feeboss, Giantsdms, xVeNoMiiZz, KafkaBlack, Quilavaa, Chakra, Connor the Goodra, and of course: Da Bic Boi. </center>'
                                       )
             },
 	jd: function(target, room, user) {
@@ -610,7 +610,7 @@ peppa: function(target, room, user) {
 
 reigns: 'darkness',
 darkness: function(target, room, user)
-        {if (!this.canBroadcast()) return false;
+        {if (!this.canBroadcast(/*Never Forget Infinite.*/)) return false;
         return this.sendReplyBox('<center><img src ="http://i.imgur.com/qoZyc5i.gif"/><br><font size="3"><b><i><font color="8A0808">DarknessReigns</i><br></font><b> <blink><font color="0B0B61">Ace: Sasuke</font></blink></b><br><b><i>It gets darkest right before dawn.</i></b></center>');
         },
 
