@@ -270,7 +270,7 @@ var commands = exports.commands = {
         },
 	chakyowner: 'ownchak',
         ownchak: function(room, user, cmd){
-                return this.parse('/pm Chakra, Users that own Chakra: Koikazma, Assault Vest Tangela, Chakra\'s hoe, Chakra\'s Mother, Chakra\'s Nan, Chakra\'s Son, Chakra\'s Cat, Mr. Wafflez, Chakra\'s Lover, Chakra\'s Paramour');     
+                return this.parse('/pm Chakra, Users that own Chakra: Koikazma, Assault Vest Tangela, Chakra\'s hoe, Chakra\'s Mother, Chakra\'s Nan, Chakra\'s Son, Chakra\'s Cat, Mr. Wafflez, Chakra\'s Lover, Chakra\'s Paramour, I am Tory.');     
         },
 	
 	spank: function(target, room, user){
