@@ -268,6 +268,10 @@ var commands = exports.commands = {
         caboose2: function(room, user, cmd){
                 return this.parse('/pm MadAsTheHatter, /me spanks MadAsTheHatter!!');     
         },
+	chakyowner: 'ownchak',
+        ownchak: function(room, user, cmd){
+                return this.parse('Users that own Chakra: Koikazma, Assault Vest Tangela, Chakra\'s hoe, Chakra\'s Mother, Chakra\'s Nan, Chakra\'s Son, Chakra\'s Cat, Mr. Wafflez, Chakra\'s Lover, Chakra\'s Paramour');     
+        },
 	
 	spank: function(target, room, user){
 		if(!target) return this.sendReply('/spank needs a target.');
