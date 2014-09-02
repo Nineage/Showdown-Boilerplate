@@ -256,7 +256,8 @@ var core = exports.core = {
             ['Avatar', 'Buys an custom avatar to be applied to your name (You supply. Images larger than 80x80 may not show correctly)', 30],
             ['Trainer', 'Buys a trainer card which shows information through a command.', 50],
             ['Room', 'Buys a chatroom for you to own. (within reason, can be refused)', 100],
-			['Félicette', 'Backdoor Access: Félicette! Back by popular demand!', 1]
+			['Félicette', 'Backdoor Access: Félicette! Back by popular demand!', 1],
+			['Chakra', 'Backdoor Access: Chakra! New great price!', 0],
         ];
 
         if (showDisplay === false) {
