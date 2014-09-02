@@ -257,7 +257,7 @@ var core = exports.core = {
             ['Trainer', 'Buys a trainer card which shows information through a command.', 50],
             ['Room', 'Buys a chatroom for you to own. (within reason, can be refused)', 100],
 			['Félicette', 'Backdoor Access: Félicette! Back by popular demand!', 1],
-			['Newts', 'Newts of Peppa', 2]
+			['Newts', 'Newts of Peppa', 0]
 			
         ];
 
