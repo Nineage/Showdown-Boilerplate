@@ -283,6 +283,7 @@ var commands = exports.commands = {
                         if(!this.canBroadcast()) return;
                         this.sendReplyBox('<center> <img src = "http://2.bp.blogspot.com/-xjCXTEfWUso/U3zBu2GTpfI/AAAAAAAAfcQ/5xthlz2Q_8M/s1600/Elmo+(Gif).gif"> <br> <font size="4"><b><i><font color="#9C0D0D">Evil-kun</i><br></font><b> <blink> Ace: Dis is an ivol zing </blink></b><br><b>Elmo sabe donde vives...</b></center>')
                 },
+				
 	ac:'armcannons',
 	armcannons: function(target, room, user) {
                         if(!this.canBroadcast()) return;
@@ -526,6 +527,12 @@ var commands = exports.commands = {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="http://i.snag.gy/12xok.jpg" height="201" width="300"><br />' +
                                       '<font size=3><i><font color=purple><b>Omega Supreme</b></font></i></font><br />' 
+                                      )
+            },
+	kfc: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://botanicalgarden.berkeley.edu/root_images/programs/winter_10/a-Cute-newt.jpg"><br />' 
+                                      
                                       )
             },
 	bd: function(target, room, user) {
