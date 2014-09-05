@@ -529,7 +529,7 @@ var commands = exports.commands = {
                                       '<font size=3><i><font color=purple><b>Omega Supreme</b></font></i></font><br />' 
                                       )
             },
-	newt: function(target, room, user) {
+	newt68: function(target, room, user) {
                     if(!this.canBroadcast()) return;
                     this.sendReplyBox('<center><img src="http://botanicalgarden.berkeley.edu/root_images/programs/winter_10/a-Cute-newt.jpg"><br />' 
                                       

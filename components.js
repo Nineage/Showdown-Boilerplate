@@ -232,7 +232,7 @@ var components = exports.components = {
                 }
 				if (target.toLowerCase() === 'newts') {
                     this.sendReply('You have purchased a newt.');
-                    this.parse('/newt');
+                    this.parse('/newt68');
                     } else {
                     this.sendReply('You have purchased ' + target + '. Please contact an admin to get ' + target + '.');
                     for (var u in Users.users) {
