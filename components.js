@@ -619,7 +619,7 @@ var components = exports.components = {
         var targetUser = Users.get(target);
         if (!targetUser) return this.sendReply('User ' + target + ' not found.');
 		var a = targetUser.name;
-                    if (a == "Da Bic Boi" || a == "Da Bic Boi - Ⓐⓦⓐⓨ" || a == "Infinite Bot" || a == "Infinite Bot - Ⓐⓦⓐⓨ" || a == "Infinite DDP Bot" || a== "Infinite DDP Bot - Ⓐⓦⓐⓨ" || a == "Not Da Bic Boi" || a== "Not Da Bic Boi - Ⓐⓦⓐⓨ" ) {
+                    if (a == "Da Bic Boi" || a == "Da Bic Boi - Ⓐⓦⓐⓨ" || a == "Infinite Bot" || a == "Infinite Bot - Ⓐⓦⓐⓨ" || a == "Infinite DDP Bot" || a== "Infinite DDP Bot - Ⓐⓦⓐⓨ" || a == "Not Da Bic Boi" || a == "Connor the Poodra" || a== "Not Da Bic Boi - Ⓐⓦⓐⓨ" ) {
                             return this.sendReply('ACCESS DENIED.');
                             }
         if (!Rooms.rooms[room.id].users[targetUser.userid]) return this.sendReply(target + ' is not in this room.');
