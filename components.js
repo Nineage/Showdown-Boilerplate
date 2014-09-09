@@ -300,11 +300,7 @@ var components = exports.components = {
         return this.sendReply("Message \"" + message + "\" sent to " + this.targetUsername + ".");
     },
 
-    viewtells: 'showtells',
-    showtells: function (target, room, user){
-        return this.sendReply("These users have currently have queued tells: " + Object.keys(tells));
-    },
-
+    
     vote: function (target, room, user) {
         if (!Poll[room.id].question) return this.sendReply('There is no poll currently going on in this room.');
         if (!this.canTalk()) return;
