@@ -261,9 +261,30 @@ var commands = exports.commands = {
                 return this.parse('/pm Chakra, http://107.161.19.92:8000/TCs/spam.jpg');     
         },
 	donger: 'dong',
-        dong: function(room, user, cmd){
-                return this.parse('ヽ༼ຈل͜ຈ༽ﾉ');     
-        },
+        dong: (function () {
+        var randomdong = [
+            "( ͡° ͜ʖ ͡°)",
+            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ ",
+            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ",
+            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐",
+            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)",
+            "¯\_(ツ)_/¯",
+            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?",
+            "ate a bomb!",
+            "is blasting off again!",
+            "(Quit: oh god how did this get here i am not good with computer)",
+            "was unfortunate and didn't get a cool selecteddong.",
+            "The Immortal accidently kicked {{user}} from the server!",
+        ];
+
+        return function (target, room, user) {
+            
+            var selecteddong = target || randomdong[Math.floor(Math.random() * randomdong.length)];
+            if (!this.canTalk(selecteddong)) return false;
+			this.sendReply('NUMBER OF VOTES: ' + selecteddong);
+
+            };
+    })(),
 	raisedong: 'dongers',
 	raisedongers: 'dongers',
         dongers: function(target, room, user) {
