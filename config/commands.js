@@ -280,6 +280,26 @@ var commands = exports.commands = {
 
             };
     })(),
+	dongershare: 'dongshare',
+        dongshare: (function () {
+        var randomdong = [
+            "( ͡° ͜ʖ ͡°)",
+            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ ",
+            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ",
+            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐",
+            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)",
+            "¯\\_(ツ)_/¯",
+            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?"
+        ];
+
+        return function (target, room, user) {
+            
+            var selecteddong = target || randomdong[Math.floor(Math.random() * randomdong.length)];
+            if (!this.canTalk(selecteddong)) return false;
+			return this.parse(selecteddong);
+
+            };
+    })(),
 	raisedong: 'dongers',
 	raisedongers: 'dongers',
         dongers: function(target, room, user) {
