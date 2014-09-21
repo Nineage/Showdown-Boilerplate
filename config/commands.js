@@ -260,27 +260,7 @@ var commands = exports.commands = {
         aboose: function(room, user, cmd){
                 return this.parse('/pm Chakra, http://107.161.19.92:8000/TCs/spam.jpg');     
         },
-	donger: 'dong',
-        dong: (function () {
-        var randomdong = [
-            "( ͡° ͜ʖ ͡°)",
-            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ ",
-            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ",
-            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐",
-            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)",
-            "¯\\_(ツ)_/¯",
-            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?"
-        ];
-
-        return function (target, room, user) {
-            
-            var selecteddong = target || randomdong[Math.floor(Math.random() * randomdong.length)];
-            if (!this.canTalk(selecteddong)) return false;
-			this.sendReply(selecteddong);
-
-            };
-    })(),
-	dongershare: 'dongshare',
+	dong: 'dongshare',
         dongshare: (function () {
         var randomdong = [
             "( ͡° ͜ʖ ͡°).",
@@ -297,6 +277,26 @@ var commands = exports.commands = {
             var selecteddong = target || randomdong[Math.floor(Math.random() * randomdong.length)];
             if (!this.canTalk(selecteddong)) return false;
 			return this.parse(selecteddong);
+
+            };
+    })(),
+	dong2: 'dongshare2',
+        dongshare2: (function () {
+        var randomdong2 = [
+            "( ͡° ͜ʖ ͡°).",
+            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ. ",
+            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ.",
+            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐.",
+            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿).",
+            "¯\\_(ツ)_/¯.",
+            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?."
+        ];
+
+        return function (target, room, user) {
+            
+            var selecteddong2 = target || randomdong2[Math.floor(Math.random() * randomdong2.length)];
+            if (!this.canTalk(selecteddong2)) return false;
+			return this.parse(selecteddong2);
 
             };
     })(),
