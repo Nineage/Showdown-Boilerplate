@@ -269,12 +269,7 @@ var commands = exports.commands = {
             "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐",
             " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)",
             "¯\_(ツ)_/¯",
-            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?",
-            "ate a bomb!",
-            "is blasting off again!",
-            "(Quit: oh god how did this get here i am not good with computer)",
-            "was unfortunate and didn't get a cool selecteddong.",
-            "The Immortal accidently kicked {{user}} from the server!",
+            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?"
         ];
 
         return function (target, room, user) {
