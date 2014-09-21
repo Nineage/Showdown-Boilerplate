@@ -264,12 +264,12 @@ var commands = exports.commands = {
         dongshare: (function () {
         var randomdong = [
             "( ͡° ͜ʖ ͡°).",
-            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ. ",
-            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ.",
-            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐.",
-            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿).",
+            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ ",
+            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ",
+            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐",
+            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)",
             "¯\\_(ツ)_/¯.",
-            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?."
+            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?"
         ];
 
         return function (target, room, user) {
@@ -297,6 +297,26 @@ var commands = exports.commands = {
             var selecteddong2 = target || randomdong2[Math.floor(Math.random() * randomdong2.length)];
             if (!this.canTalk(selecteddong2)) return false;
 			return this.parse(selecteddong2);
+
+            };
+    })(),
+	dong3: 'dongshare3',
+        dongshare3: (function () {
+        var randomdong3 = [
+            "( ͡° ͜ʖ ͡°)._",
+            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ._ ",
+            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ._",
+            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐._",
+            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)._",
+            "¯\\_(ツ)_/¯._",
+            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?._"
+        ];
+
+        return function (target, room, user) {
+            
+            var selecteddong3 = target || randomdong3[Math.floor(Math.random() * randomdong3.length)];
+            if (!this.canTalk(selecteddong3)) return false;
+			return this.parse(selecteddong3);
 
             };
     })(),
