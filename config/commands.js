@@ -276,7 +276,7 @@ var commands = exports.commands = {
             
             var selecteddong = target || randomdong[Math.floor(Math.random() * randomdong.length)];
             if (!this.canTalk(selecteddong)) return false;
-			this.sendReply('NUMBER OF VOTES: ' + selecteddong);
+			this.sendReply(selecteddong);
 
             };
     })(),
