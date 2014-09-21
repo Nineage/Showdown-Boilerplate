@@ -283,13 +283,13 @@ var commands = exports.commands = {
 	dong2: 'dongshare2',
         dongshare2: (function () {
         var randomdong2 = [
-            "( ͡° ͜ʖ ͡°).",
-            "ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ. ",
-            "ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ.",
-            "┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐.",
-            " (▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿).",
-            "¯\\_(ツ)_/¯.",
-            "༼ﾉຈل͜ຈ༽ﾉ Y u no raise donger?."
+            ";_( ͡° ͜ʖ ͡°).",
+            ";_ヽ༼ຈل͜ຈ༽ﾉʀᴀɪsᴇ ʏᴏᴜʀ ᴅᴏɴɢᴇʀsヽ༼ຈل͜ຈ༽ﾉ. ",
+            ";_ᕙ༼ຈل͜ຈ༽ᕗ flex your dongers ᕙ༼ຈل͜ຈ༽ᕗ.",
+            ";__┌༼ຈل͜ຈ༽┐ lower your dongers ┌༼ຈل͜ຈ༽┐.",
+            " ;_(▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ ɴᴀᴍᴇ's ᴅᴏɴɢ. ᴊᴀᴍᴇs ᴅᴏɴɢ (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿).",
+            "¯\\_(ツ)_/¯.;;_",
+            " ;- ﾉຈل͜ຈ༽ﾉ Y u no raise donger?."
         ];
 
         return function (target, room, user) {
