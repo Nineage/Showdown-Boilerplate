@@ -260,6 +260,17 @@ var commands = exports.commands = {
         aboose: function(room, user, cmd){
                 return this.parse('/pm Chakra, http://www.todayifoundout.com/wp-content/uploads/2010/09/spam5.jpg');     
         },
+	donger: 'dong',
+        dong: function(room, user, cmd){
+                return this.parse('ヽ༼ຈل͜ຈ༽ﾉ');     
+        },
+	raisedong: 'dongers',
+	raisedongers: 'dongers',
+        dongers: function(target, room, user) {
+                    if(!this.canBroadcast()) return;
+                    this.sendReplyBox('<center><img src="http://i1.kym-cdn.com/photos/images/newsfeed/000/568/846/fd7.gif"><br />' +
+                                      '<font size=3><i><font color=red><b><blink>ヽ༼ຈل͜ຈ༽ﾉ raise your dongers ヽ༼ຈل͜ຈ༽ﾉ</blink></b></font></i></font><br />')
+            },
 	crie: 'caboose',
         caboose: function(room, user, cmd){
                 return this.parse('/pm MadAsTheHatter, /me spanks MadAsTheHatter!');     
