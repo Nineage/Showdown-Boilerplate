@@ -741,6 +741,15 @@ exports.Formats = [
 		banlist: ['Illegal', 'Unreleased']
 	},
 	{
+                name: "RBY LC UU Monotype 1v1",
+        	section: "Other Metagames",
+    
+        	maxLevel: 5,
+        	mod: 'gen1',
+        	ruleset: ['Pokemon', 'Standard', 'Little Cup', 'HP Percentage Mod', 'Team Preview 1v1'],
+        	banlist: ['Dragon Rage', 'Sonic Boom', 'Wrap', 'Bind', 'Clamp', 'Fire Spin']
+	},
+	{
 		name: "Gen-NEXT OU",
 		section: "Other Metagames",
 
