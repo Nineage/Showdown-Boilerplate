@@ -491,6 +491,14 @@ exports.Formats = [
 	// Other Metagames
 	///////////////////////////////////////////////////////////////////
 	{
+		name: "D-rank LC",
+		section: "XY Singles",
+
+		maxLevel: 5,
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Little Cup'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar', 'Fletchling', 'Mienfoo', 'Pawniard', 'Abra', 'Archen', 'Chinchou', 'Drilbur', 'Magnemite', 'Ponyta', 'Timburr', 'Tirtouga', 'Carvanha', 'Cottonee', 'Ferroseed', 'Foongus', 'Porygon', 'Spritzee', 'Croagunk', 'Diglett', 'Gastly', 'Gothita', 'Omanyte', 'Snubbull', 'Vullaby', 'Bunnelby', 'Dwebble', 'Munchlax', 'Scraggy', 'Trubbish', 'Vulpix', 'Zigzagoon', 'Corphish', 'Cranidos', 'Doduo', 'Hippopotas', 'Houndour', 'Larvesta', 'Lickitung', 'Onix', 'Shellder', 'Staryu', 'Taillow', 'Bellsprout', 'Drifloon', 'Elekid', 'Pumpkaboo', 'Riolu', 'Shellos', 'Slowpoke', 'Stunky', 'Torchic', 'Wynaut']
+	},
+	{	
 		name: "CAP",
 		section: "Other Metagames",
 		column: 2,
